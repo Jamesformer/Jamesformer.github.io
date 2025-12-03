@@ -58,10 +58,14 @@
     
 </script>
 <script>
-   function songinteract() {
+function songinteract() {
     const audio = new Audio('Doghole.mp3');
-    audio.play();
-};   
+    
+    audio.play().catch(error => {
+        console.error("Audio playback failed:", error);
+    });
+}
+  
 </script>
 <script>
     function quote() {
@@ -83,6 +87,6 @@
     }
 </script>
 <button onclick="quote()">get a quote</button>
-<button onclick="songinteract">play the funny carlton</button>
+<button onclick="songinteract()">Play Song</button>
 </body>
 </html>
