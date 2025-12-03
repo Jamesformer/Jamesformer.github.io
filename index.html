@@ -58,14 +58,10 @@
     
 </script>
 <script>
-    function playBackgroundMusic() {
-    var audio = new Audio('Song_That_Plays_When_Somebody_Verses_Sans_(by_Carlos_Insaneintherain_Eiene).wav');
-    audio.loop = true;
+   function songinteract() {
+    const audio = new Audio('Song_That_Plays_When_Somebody_Verses_Sans_(by_Carlos_Insaneintherain_Eiene).wav');
     audio.play();
-}
-window.onload = function() {
-    playBackgroundMusic();
-}
+};   
 </script>
 <script>
     function quote() {
@@ -87,5 +83,6 @@ window.onload = function() {
     }
 </script>
 <button onclick="quote()">get a quote</button>
+<button onclick="songinteract">play the funny carlton</button>
 </body>
 </html>
