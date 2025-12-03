@@ -52,6 +52,40 @@
     <a href="https://github.com/Jamesformer">Visit my github profile!</a>
     <a href="https://github.com/WTCSC/life-decision-simulator-Jamesformer">My best coding project so far</a>
     <a href="page2.html">I love jakeneutron</a>
-    <img src="Untitled.jpeg" alt="Oculus CV1!"
+    <img src="Untitled.jpeg" alt="Oculus CV1"
+
+<script>
+    
+</script>
+<script>
+    function playBackgroundMusic() {
+    var audio = new Audio('Song_That_Plays_When_Somebody_Verses_Sans_(by_Carlos_Insaneintherain_Eiene).wav');
+    audio.loop = true;
+    audio.play();
+}
+window.onload = function() {
+    playBackgroundMusic();
+}
+</script>
+<script>
+    function quote() {
+        const quotes = [
+            "All that we are is the result of what we have thought. Buddha",
+            "The most courageous act is still to think for yourself. Aloud. Coco Chanel",
+            "The greatest wealth is to live content with little. Plato",
+            "The future belongs to those who prepare for it today. Malcolm X",
+            "I have no special talent. I am only passionately curious. Albert Einstein",
+            "Those who dare to fail miserably can achieve greatly. John F. Kennedy",
+            "For super earth. Helldiver cadet",
+            "if buying isn't owning piracy isn't stealing. Anonymous",
+            "SWAWS. RussianBadger",
+            "You either die a hero or live long enough to see yourself become the villain. Harvey Dent"
+        ];
+
+        const randomIndex = Math.floor(math.random() * quotes.length);
+        alert(quotes[randomIndex]);
+    }
+</script>
+<button onclick="quote()">get a quote</button>
 </body>
 </html>
